@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+img {
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none !important;
+}
+:root {
+    --main-color:  #00aff0;
+    --red-color: #cf1d2e;
+}
+p {
+    font-size: .8rem !important;
+}
+h1 {
+    font-weight: 600 !important;
+}
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600 !important;
+}
+.pointer{
+    cursor: pointer;
+}
+.bg-primary {
+    background-color: var(--main-color) !important;
+}
+.white-text {
+    color: #fff;
+}
+.primary-text, .text-primary {
+    color: var(--main-color) !important;
+}
+.nav-btn {
+    background: #fdfdfd !important;
+    color: var(--main-color) !important;
+    border-radius: .5rem !important;
+    box-shadow: 4px 2px 4px 1px #555;
+    font-weight: 700;
+}
+.nav-btn:hover {
+    box-shadow: 4px 2px 4px 2px #555;
+}
+.navbar-brand img {
+    height: 5rem !important;
+    width: 8rem !important;
+}
+nav .navbar-nav li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+nav .navbar-nav li:hover a {
+    color: var(--main-color) !important;
+}
+
+#header {
+    position: relative;
+}
+#header .carousel-item {
+    height: 100vh;
+}
+#header .carousel-item .carousel-caption {
+    text-shadow: 1px 1px 3px #444;
+    font-size: 8rem;
+    margin: 15% 0;
+}
+#header .carousel-item img {
+    margin-top: 8rem;
+}
+.hero-cards {
+    position: absolute;
+    top: 64%;
+    left: 15%;
+}
+.hero-cards .card {
+    height: 10rem;
+    min-width: 11rem;
+    padding: 2rem;
+    border-radius: unset;
+    border: 1px solid var(--main-color);
+}
+.hero-cards .card p {
+    font-size: .8rem;
+}
+#about {
+    border-top: 1px solid var(--main-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#about .about-img {
+    background-color: rgba(63, 191, 184, .2);
+}
+#services {
+    background: linear-gradient(90deg, #00b0f0 70%, #fff 20%);
+}
+#services .services-hr {
+    height:2px;
+    border-width:0;
+    color:#fff;
+    background-color:#fff;
+    width: 5rem;
+}
+#news .card {
+    box-shadow: 4px 2px 4px 2px #ccc;
+    margin: 2rem auto !important;
+}
+#news .card h5 {
+    font-weight: 700;
+}
+#contact {
+    height: 80vh;
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+#contact .mask {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0, 176, 240, 0.749);
+}
+#contact .container {
+    position: absolute;
+    top: 0;
+}
+#contact h1 {
+    margin-top: 2rem;
+}
+#contact .card {
+    border-radius: 2rem;
+    padding: 3rem 1rem;
+    margin-top: 2rem;
+}
+#contact .card form input,
+#contact .card form textarea {
+    border: 1px solid #ccc;
+    border-radius: .8rem;
+    outline: none;
+    padding: .8rem;
+    box-shadow: none;
+}
+#contact form label {
+    font-size: .8rem;
+}
+#contact .card form textarea {
+    resize: none;
+}
+#contact .card form input::placeholder,
+#contact .card form textarea::placeholder {
+    font-size: .8rem;
+}
+.contact-col {
+    padding-left: 6rem !important;
+}
+@media screen and (max-width: 768px) {
+    .second-hamburger {
+        display: none;
+    }
+    #header .carousel-item {
+        height: 100%;
+        margin-top: 5rem;
+    }
+    #header .carousel-item .carousel-caption h1 {
+        font-size: 1.2rem;
+    }
+    #header .carousel-item .carousel-caption h4 {
+        font-size: 1rem;
+    }
+    #contact {
+        height: 150vh;
+        padding: 0;
+    }
+    #contact .mask {
+        width: 100%;
+        height: 150vh;
+        background-color: rgba(0, 176, 240, 0.75);;
+    }
+    footer img {
+        margin-bottom: 2rem;
+    }
+    .hero-cards {
+        display: none;
+    }
+    #services {
+        background: linear-gradient(90deg, #00b0f0 100%, #fff 0%);
+    }
+    .contact-col {
+        padding: 1rem !important;
+    }
+}
+footer {
+    background: #ebecf0;
+    margin-bottom: -1rem;
+}
+footer h5 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+footer li {
+    font-size: .7rem;
+    margin: 1rem 0;
+}
+footer .wrapper {
+    width: 90%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: -.2rem;
+}
+footer .footer-bottom p {
+    font-size: .7rem;
+}
+
+.btn-primary{
+    background-color: #00aff0 !important;
+    border-color: #00aff0 !important;
+}
+/*Bloglist Page*/
+#bloglist-hero {
+    background-image: url("../images/a.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 80vh;
+    margin-top: 8rem;
+    position: relative;
+}
+#bloglist-hero .heading {
+    position: absolute;
+    left: 40%;
+    color: #fff;
+    top: 45%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.4);
+}
+
+#list .blog-snippet {
+    color: var(--main-color);
+    font-weight: 700;
+}
+#list .author {
+    margin: 0;
+    font-weight: 600;
+}
+#list .publishDate {
+    margin: 0;
+    font-weight: 300;
+    font-size: .8rem;
+}
+ hr {
+    height:2px;
+    border-width:0;
+    background-color:var(--main-color);
+}
+.date h5 {
+    font-weight: 600;
+}
+@media screen and (max-width: 768px){
+    #bloglist-hero .heading {
+        left: 26%;
+    }
+}
+ /*Blog detail page */
+#blogdetail-hero {
+    background-image: url("../images/blog.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 80vh;
+    margin-top: 8rem;
+    position: relative;
+}
+#blogdetail-hero .heading {
+    position: absolute;
+    left: 33%;
+    color: #fff;
+    top: 45%;
+}
+
+#blogBody .tags a {
+    font-weight: 600;
+    color: var(--main-color);
+    text-decoration: none;
+}
+#comments .heading {
+    color: var(--main-color);
+}
+.mainComment .avatar .fa,
+.reply .avatar .fa {
+    color: var(--main-color);
+    margin: .5rem 0;
+}
+.mainComment .date,
+.mainComment .username,
+.reply .date,
+.reply .username {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.mainComment a,
+.reply a {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+
+/*Comment section / form */
+
+#commentCreation .heading {
+    color: var(--main-color);
+}
+#commentCreation form input,
+#commentCreation form textarea {
+    border-radius: unset;
+    outline: none;
+    box-shadow: 0 0 0 0;
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+}
+#commentCreation form textarea {
+    resize: none;
+}
+#commentCreation form button {
+    margin-top: 2rem;
+    padding: .5rem 3rem;
+    border-radius: 1rem;
+    background: var(--main-color);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+/*--------------- About Us Page ------------*/
+
+#aboutHero {
+    background-image: url(../images/blog7.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: 8rem;
+    position: relative;
+}
+#aboutHero .heading {
+    position: absolute;
+    left: 40%;
+    color: #fff;
+    top: 45%;
+}
+#values {
+    background: linear-gradient(90deg, #00b0f0 70%, #fff 20%);
+}
+
+
+@media screen and (max-width: 768px){
+    #aboutHero .heading {
+        left: 26%;
+    }
+    #values {
+        background: linear-gradient(90deg, #00b0f0 70%, #00b0f0 20%);
+    }
+}
+/*--------------- END About Us Page ------------*/
+/*--------------- Clinical Page ------------*/
+#clinicalHero {
+    background-image: url(../images/blog7.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: 8rem;
+    position: relative;
+}
+#clinicalHero .heading {
+    position: absolute;
+    left: 40%;
+    color: #fff;
+    top: 45%;
+}
+#diagnostics {
+    background-image: url(../images/blog7.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 100vh !important;
+    margin-top: 8rem;
+    position: relative;
+}
+#diagnostics .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*bottom: 0;*/
+    right: 0;
+    background: var(--main-color);
+    opacity: .8;
+}
+#diagnostics .container {
+    position: absolute;
+    color: #fff;
+    top: 10%;
+}
+#diagnostics .container {
+    left: 7%;
+    }
+#diagnostics select {
+    box-shadow: 4px 2px 4px 1px #555;
+}
+#diagnostics label {
+    font-weight: 600;
+}
+.symptomBtn {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.suggestionBtn {
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: left;
+    box-shadow: 4px 2px 4px 1px #555;
+}
+#appointmentForm select,
+#appointmentForm input {
+    border: none;
+    border-bottom: 1px solid #555;
+    border-radius: unset;
+}
+#appointmentForm select:focus,
+#appointmentForm input:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 0;
+}
+@media screen and (max-width: 768px) {
+    #clinicalHero .heading {
+        left: 26%;
+    }
+    #diagnostics .container {
+        left: 0;
+        top: 0;
+    }
+    #symptoms {
+        line-height: 4rem;
+    }
+    #diagnostics {
+        min-height: 170vh !important;
+    }
+    #diagnostics .overlay {
+        min-height: 170vh !important;
+    }
+}
+/*--------------- End Clinical Page ------------*/
+/*---------------  Clinical Laboratories Page ------------*/
+#clinicalLabHero {
+    background-image: url(../images/services.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: 8rem;
+    position: relative;
+}
+#clinicalLabHero .heading {
+    position: absolute;
+    left: 35%;
+    color: #fff;
+    top: 45%;
+}
+
+.fa-circle {
+    font-size: .8rem;
+}
+@media screen and (max-width: 768px) {
+    #clinicalLabHero .heading {
+        left: 4%;
+    }
+}
+/*--------------- End Clinical Laboratories Page  ------------*/
+
+/*---------------  Distributions Page ------------*/
+#distributionsHero {
+    background-image: url(../images/services.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: 8rem;
+    position: relative;
+}
+#distributionsHero .heading {
+    position: absolute;
+    left: 40%;
+    color: #fff;
+    top: 45%;
+}
+.box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #000;
+    box-shadow: 6px 4px 8px rgba(0, 0, 0, .5);
+}
+.box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.box:hover .imgBx img {
+    opacity: 0;
+}
+.box .content {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(4px);
+    transition: .5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+.box:hover .content {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    backdrop-filter: blur(2px);
+}
+.box .content h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+.box .content p {
+    margin: 10px 0 0;
+    padding: 0;
+    line-height: 1.2rem;
+    transition: .5s;
+    text-align: justify;
+}
+.box:hover .content p {
+    opacity: 1;
+    transition-delay: .5s;
+}
+/*---------------  Services Page ------------*/
+#servicesHero {
+    background-image: url(../images/service.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: 8rem;
+    position: relative;
+}
+#servicesHero .heading {
+    position: absolute;
+    left: 45%;
+    color: #fff;
+    top: 45%;
+}
+@media screen and (max-width: 768px) {
+    #distributionsHero .heading {
+        left: 4%;
+    }
+    #servicesHero .heading {
+        left: 4%;
+    }
+}
+/*--------------- End  Distributions Page ------------*/
+
