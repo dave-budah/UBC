@@ -100,6 +100,20 @@ nav .navbar-nav li:hover a {
 .hero-cards .card p {
     font-size: .8rem;
 }
+button.carousel-control-next,
+button.carousel-control-prev {
+    background: transparent !important;
+    border: none !important;
+}
+button.carousel-control-next:hover,
+button.carousel-control-prev:hover {
+    background: transparent !important;
+}
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+    filter: invert(100%);
+
+}
 #about {
     border-top: 1px solid var(--main-color);
     padding-top: 2rem;
