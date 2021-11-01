@@ -397,6 +397,23 @@ footer .footer-bottom p {
     }
 }
 /*--------------- END About Us Page ------------*/
+/*------------- Contact Page--------------*/
+/*------------- Contact Page--------------*/
+#contactHero {
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: 8rem;
+    position: relative;
+}
+#contactHero .heading {
+    position: absolute;
+    left: 40%;
+    color: #fff;
+    top: 45%;
+}
 /*--------------- Clinical Page ------------*/
 #clinicalHero {
     background-image: url(../images/blog7.jpg);
