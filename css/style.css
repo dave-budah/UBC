@@ -369,9 +369,9 @@ footer .footer-bottom p {
 /*--------------- About Us Page ------------*/
 
 #aboutHero {
-    background-image: url(../images/blog7.jpg);
+    background-image: url(../images/aboutHero.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
     height: 80vh;
     margin-top: 8rem;
