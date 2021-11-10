@@ -112,11 +112,11 @@
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-            <span class="carousel-control-prev-icon indigo" aria-hidden="true"></span>
+            <!--<span class="carousel-control-prev-icon indigo" aria-hidden="true"></span> -->
             <span class="sr-only">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <!--  <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
             <span class="sr-only">Next</span>
         </button>
     </div>
@@ -125,7 +125,7 @@
     <div class="hero-cards">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-2 my-5 border-primary">
+                <div class="col-sm-12 col-md-2 my-5 border-0">
                     <div class="card bg-white text-center">
                         <div class="hero-card-icon">
                             <i class="fa fa-first-aid text-primary fa-2x py-3"></i>
@@ -134,7 +134,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-2 my-5 border-primary">
+                <div class="col-sm-12 col-md-2 my-5 border-0">
                     <div class="card bg-white text-center">
                         <div class="hero-card-icon">
                             <i class="fa fa-truck text-primary fa-2x py-3"></i>
@@ -143,7 +143,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-2 my-5 border-primary">
+                <div class="col-sm-12 col-md-2 my-5 border-0">
                     <div class="card bg-white text-center">
                         <div class="hero-card-icon">
                             <i class="fa fa-university text-primary fa-2x py-3"></i>
@@ -152,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-2 my-5 border-primary">
+                <div class="col-sm-12 col-md-2 my-5 border-0">
                     <div class="card bg-white text-center">
                         <div class="hero-card-icon">
                             <i class="fa fa-heartbeat text-primary fa-2x py-3"></i>
@@ -161,7 +161,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-2 my-5 border-primary">
+                <div class="col-sm-12 col-md-2 my-5 b-0">
                     <div class="card bg-white text-center">
                         <div class="hero-card-icon">
                             <i class="fa fa-heartbeat text-primary fa-2x py-3"></i>
@@ -381,11 +381,16 @@
     $('.carousel').carousel(
 
     );
-</script>
-<script>
     $(document).on('click', '.yamm .dropdown-menu', function(e){
         e.stopPropagation();
     })
+    $(document).ready(()=>{
+        // check if current caption is empty
+
+        // if empty, hide cards
+
+        // if not display card services
+    });
 </script>
 </body>
 </html>
