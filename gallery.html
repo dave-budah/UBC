@@ -5,14 +5,15 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">-->
+  <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">-->
   <link rel="stylesheet" href="css/yamm.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <title>UBC Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"/>
+  <title>Gallery</title>
 </head>
 <body>
 <div class="fixed-top">
@@ -68,33 +69,71 @@
   </nav>
 </div>
 
-<section id="servicesHero">
-  <div class="overlay"></div>
+<section id="distributionsHero">
+  <div class="overlays"></div>
   <div class="container text-center">
     <div class="heading">
-      <h1>Services</h1>
+      <h1>Gallery</h1>
     </div>
   </div>
 </section>
-<section>
+
+<section id="gallery">
   <div class="container">
-    <p>Ubc Clinical Labs services both private and public hospitals. We perform a comprehensive range of services for doctors, patients and corporate clients including:</p>
+   <div class="row">
+     <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+        <div class="hoverEffects">
+            <img src="images/a.jpg" height="270" width="100%" alt="">
+          <div class="overlays">
+            <h4>Lorem ipsum dolert amnuinit</h4>
+            <a href="images/a.jpg" class="info fancybox" data-fancybox="gallery1">Details</a>
+          </div>
+        </div>
+     </div>
 
-    <ul>
-      <li><i class="fa fa-circle mr-2"></i><a href="#tpathology">All routine pathology tests</a></li>
-      <li><i class="fa fa-circle mr-2"></i><a href="#apathology">Advanced pathology</a></li>
-      <li><i class="fa fa-circle mr-2"></i><a href="#medical">First trimester screening & Non-Invasive Prenatal testing</a></li>
-      <li><i class="fa fa-circle mr-2"></i><a href="#cscreening">Chemical pathology</a></li>
-      <li><i class="fa fa-circle mr-2"></i><a href="#haematology">Haematology</a></li>
-      <li><i class="fa fa-circle mr-2"></i><a href="#histopathology">Histopathology</a></li>
-      <li><i class="fa fa-circle mr-2"></i><a href="#immunology">Immunology</a></li>
-      <li><i class="fa fa-circle mr-2"></i><a href="#microbiology">Serology and microbiology</a></li>
-      <li><i class="fa fa-circle mr-2"></i><a href="#fpathology">Functional pathology</a></li>
-      <li><i class="fa fa-circle mr-2"></i><a href="#alcohol">Commercial drug & alcohol testing</a></li>
-    </ul>
+     <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+       <div class="hoverEffects">
+           <img src="images/blog6.jpg" height="270" width="100%" alt="">
+         <div class="overlays">
+           <h4>Lorem ipsum dolert amnuinit</h4>
+           <a href="images/blog6.jpg" class="info fancybox" data-fancybox="gallery1">Details</a>
+         </div>
+       </div>
+     </div>
 
+     <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+       <div class="hoverEffects">
+           <img src="images/blog.jpg" height="270" width="100%" alt="">
+         <div class="overlays">
+           <h4>Lorem ipsum dolert amnuinit</h4>
+           <a href="images/blog.jpg" class="info fancybox" data-fancybox="gallery1">Details</a>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+       <div class="hoverEffects">
+           <img src="images/about.jpg" height="270" width="100%" alt="">
+         <div class="overlays">
+           <h4>Lorem ipsum dolert amnuinit</h4>
+           <a href="images/about.jpg" class="info fancybox" data-fancybox="gallery1">Details</a>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+       <div class="hoverEffects">
+           <img src="images/b.jpg" height="270" width="100%" alt="">
+         <div class="overlays">
+           <h4>Lorem ipsum dolert amnuinit</h4>
+           <a href="images/b.jpg" class="info fancybox" data-fancybox="gallery1">Details</a>
+         </div>
+       </div>
+     </div>
+   </div>
   </div>
 </section>
+
 <footer class="center">
   <div class="wrapper">
     <div class="footer-top">
@@ -150,6 +189,7 @@
 <!--<script src="js/bootstrap.min.js"></script>-->
 <!--<script src="js/popper.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
 <script>
@@ -162,5 +202,4 @@
 </script>
 </body>
 </html>
-
 
