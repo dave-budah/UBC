@@ -4,6 +4,9 @@
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
 
+} 
+body{
+    overflow-x: hidden;
 }
 .container {
     padding-top: 2rem !important;
@@ -53,11 +56,11 @@ h5 {
     background: #fdfdfd !important;
     color: var(--main-color) !important;
     border-radius: .5rem !important;
-    box-shadow: 4px 2px 4px 1px #555;
+    box-shadow: 3px ​0px 2px -2px rgba(0,0,0,0.5)!important;
     font-weight: 700;
 }
 .nav-btn:hover {
-    box-shadow: 4px 2px 4px 2px #555;
+    box-shadow: 3px ​0px 1px -1px rgba(0,0,0,0.6)!important;
 }
 .navbar-brand img {
     height: 5rem !important;
@@ -100,20 +103,34 @@ nav .navbar-nav li:hover a {
 .hero-cards .card p {
     font-size: .8rem;
 }
-button.carousel-control-next,
-button.carousel-control-prev {
-    background: transparent !important;
-    border: none !important;
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    color:#00aff0 !important;
 }
-button.carousel-control-next:hover,
+button.carousel-control-next{   
+    border: none !important;
+    background: rgb(0,170,240) !important;
+    background: linear-gradient(90deg, rgba(0,170,240,0) 20%, rgba(0,170,240,0.15) 60%, rgba(0,170,240,0.35) 100%) !important;
+}
+button.carousel-control-prev {   
+    border: none !important;
+    background: rgb(0,170,240) !important;
+    background: linear-gradient(90deg, rgba(0,170,240,0.35) 0%, rgba(0,170,240,0.15) 40%, rgba(0,170,240,0) 100%) !important;
+}
+button.carousel-control-next:hover{
+    background: rgb(2,0,36) !important;
+    background: linear-gradient(90deg, rgba(2,0,36,0) 20%, rgba(0,170,240,0.2) 60%, rgba(0,212,255,0.4) 100%) !important;
+}
 button.carousel-control-prev:hover {
-    background: transparent !important;
+    background: rgb(2,0,36) !important;
+    background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(0,170,240,0.2) 40%, rgba(0,212,255,0) 100%) !important;
 }
 span.carousel-control-prev-icon,
 span.carousel-control-next-icon {
     filter: invert(100%);
 
 }
+
+
 #about {
     border-top: 1px solid var(--main-color);
     padding-top: 2rem;
@@ -184,6 +201,47 @@ span.carousel-control-next-icon {
 .contact-col {
     padding-left: 6rem !important;
 }
+.mx-wd-80{
+    max-width: 80% !important;
+}
+
+.btn-facebook{
+    background-color:  #3b5998 !important;
+    border:  #3b5998 !important;
+    color: #fff !important;
+}
+.btn-linkedin{
+    background-color:  #0072b1 !important;
+    border:  #0072b1 !important;
+    color: #fff !important;
+}
+.btn-twitter{
+    background-color:  #0072b1 !important;
+    border:  #0072b1 !important;
+    color: #fff !important;
+}
+
+.btn-instagram{
+    background-color:  #c32aa3 !important;
+    border:  #c32aa3 !important;
+    color: #fff !important;
+}
+
+.blueoverlay {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 176, 240, 0.749); /* Black background with opacity */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+
+
+
 @media screen and (max-width: 768px) {
     .second-hamburger {
         display: none;
