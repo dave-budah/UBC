@@ -14,6 +14,69 @@
     <title>UBC Home</title>
 </head>
 <body>
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bookingModalLabel">Fill in the booking form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" id="booking-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="b-name">Name</label>
+                                <input type="text" class="form-control" id="b-name" aria-describedby="name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="b-email">Email</label>
+                                <input type="text" class="form-control" id="b-email" aria-describedby="email">
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="b-phone">Phone</label>
+                                <input type="text" class="form-control" id="b-phone" aria-describedby="phone">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="branch">Branch</label>
+                                <select class="custom-select mb-4" id="branch">
+                                    <option selected>Select branch</option>
+                                    <option value="1">Branch One</option>
+                                    <option value="2">Branch Two</option>
+                                    <option value="3">Branch Three</option>
+                                </select>
+                            </div>
+                        </div>
+                   </div>
+
+
+                    <div class="form-group">
+                        <label for="b-details">Message</label>
+                        <textarea type="text" class="form-control" id="b-details" placeholder="Details"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn bg-primary text-white">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning text-white" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    Modal -->
 <div class="fixed-top">
 <div class="bg-primary">
     <div class="container" style="padding:0 !important">
@@ -22,11 +85,12 @@
                 <p class="white-text">Working Time: 24Hrs</p>
             </div>
             <div class="col-sm-12 col-md-6 py-2 text-center">
-                <button type="button" class="nav-btn btn px-5">Book an Appointment</button>
+                <button type="button" class="nav-btn btn px-5" data-toggle="modal" data-target="#bookingModal">Book an Appointment</button>
             </div>
         </div>
     </div>
 </div>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 yamm">
     <a class="navbar-brand" href="#"><img src="images/ubclogo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,7 +175,7 @@
     <div class="hero-cards">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-2 my-5 border-0">
+                <div class="col-sm-12 col-md-4 my-5 border-0">
                     <div class="card bg-white text-center">
                         <div class="hero-card-icon">
                             <i class="fa fa-first-aid text-primary fa-2x py-3"></i>
@@ -120,16 +184,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-2 my-5 border-0">
-                    <div class="card bg-white text-center">
-                        <div class="hero-card-icon">
-                            <i class="fa fa-truck text-primary fa-2x py-3"></i>
-                        </div>
-                        <p class="text-primary">Distribution</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-2 my-5 border-0">
+                <div class="col-sm-12 col-md-4 my-5 border-0">
                     <div class="card bg-white text-center">
                         <div class="hero-card-icon">
                             <i class="fa fa-university text-primary fa-2x py-3"></i>
@@ -138,21 +193,12 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-2 my-5 border-0">
+                <div class="col-sm-12 col-md-4 my-5 border-0">
                     <div class="card bg-white text-center">
                         <div class="hero-card-icon">
-                            <i class="fa fa-heartbeat text-primary fa-2x py-3"></i>
+                            <i class="fa fa-truck text-primary fa-2x py-3"></i>
                         </div>
-                        <p class="text-primary">Clinical</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-2 my-5 b-0">
-                    <div class="card bg-white text-center">
-                        <div class="hero-card-icon">
-                            <i class="fa fa-heartbeat text-primary fa-2x py-3"></i>
-                        </div>
-                        <p class="text-primary">Clinical</p>
+                        <p class="text-primary">Healthcare Distribution</p>
                     </div>
                 </div>
             </div>
@@ -297,7 +343,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea type="password" class="form-control" id="message" placeholder="Message"></textarea>
+                            <textarea type="text" class="form-control" id="message" placeholder="Message"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Submit</button>
